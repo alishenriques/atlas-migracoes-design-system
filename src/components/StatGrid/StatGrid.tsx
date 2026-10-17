@@ -21,16 +21,18 @@ export function StatGrid({ stats, className, ...props }: StatGridProps) {
   return (
     <dl className={classes} {...props}>
       {stats.map((stat) => (
+        // dt before dd and nothing else in the wrapper div, as a description
+        // list requires; CSS shows the number on top of its label.
         <div key={stat.label} className={styles.cell}>
-          {stat.icon && (
-            <span className={styles.icon} aria-hidden="true">
-              {stat.icon}
-            </span>
-          )}
-          <div className={styles.text}>
-            <dd className={styles.value}>{stat.value}</dd>
-            <dt className={styles.label}>{stat.label}</dt>
-          </div>
+          <dt className={styles.label}>{stat.label}</dt>
+          <dd className={styles.value}>
+            {stat.icon && (
+              <span className={styles.icon} aria-hidden="true">
+                {stat.icon}
+              </span>
+            )}
+            {stat.value}
+          </dd>
         </div>
       ))}
     </dl>

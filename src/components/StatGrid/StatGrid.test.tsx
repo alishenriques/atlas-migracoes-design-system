@@ -17,8 +17,18 @@ describe("StatGrid", () => {
     expect(screen.getByText("417")).toBeInTheDocument();
   });
 
+  it("pairs each label (dt) with its value (dd) directly under the list", () => {
+    const { container } = render(<StatGrid stats={[{ value: "31", label: "artistas" }]} />);
+    const pair = container.querySelector("dl > div");
+    expect([...(pair?.children ?? [])].map((child) => [child.tagName, child.textContent])).toEqual([
+      ["DT", "artistas"],
+      ["DD", "31"],
+    ]);
+  });
+
   it("hides the icon from assistive technology", () => {
     render(<StatGrid stats={[{ value: "34", label: "países", icon: <svg data-testid="icon" /> }]} />);
     expect(screen.getByTestId("icon").parentElement).toHaveAttribute("aria-hidden", "true");
+    expect(screen.getByText("34").tagName).toBe("DD");
   });
 });
