@@ -49,6 +49,8 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `Panel` — superfície translúcida sobre o mapa, com título e ação opcionais no cabeçalho (filtros, camadas, destaques)
 - `ReliabilityTag` — ponto colorido + rótulo indicando se a informação é documentada, inferida ou indeterminada
 - `StatGrid` — faixa de contadores do acervo (artistas, obras, exposições), com ícone opcional
+- `SelectField` — select nativo com rótulo, para filtros nos painéis (ex.: país de origem)
+- `YearRange` — período com duas alças num só trilho, como a linha do tempo 1918–1989 sob o mapa
 
 ## Convenção: quando um componente entra aqui
 

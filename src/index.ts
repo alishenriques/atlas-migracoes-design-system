@@ -14,3 +14,9 @@ export type { ReliabilityLevel, ReliabilityTagProps } from "./components/Reliabi
 
 export { StatGrid } from "./components/StatGrid";
 export type { Stat, StatGridProps } from "./components/StatGrid";
+
+export { SelectField } from "./components/SelectField";
+export type { SelectFieldProps, SelectOption } from "./components/SelectField";
+
+export { YearRange } from "./components/YearRange";
+export type { YearRangeProps, YearRangeValue } from "./components/YearRange";
