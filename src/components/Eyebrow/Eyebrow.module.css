@@ -1,0 +1,16 @@
+.eyebrow {
+  margin: 0;
+  font-family: var(--atlas-font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--atlas-color-accent);
+}
+
+.muted {
+  color: var(--atlas-color-muted);
+}

@@ -1,0 +1,35 @@
+:root {
+  /* Night-blue surfaces, from the Atlas screens in the project deck (ap_MIGRACOES.pptx, slides 12–21). */
+  --atlas-color-bg: #070d18;
+  --atlas-color-bg-raised: #0d1626;
+  --atlas-color-bg-overlay: rgba(13, 22, 38, 0.88);
+  --atlas-color-fg: #ece6d8;
+  --atlas-color-muted: #8e97a6;
+  /* Gold: the one accent — active nav, highlighted cities, primary actions. */
+  --atlas-color-accent: #d4a64a;
+  --atlas-color-accent-ink: #1a1206;
+  --atlas-color-accent-soft: rgba(212, 166, 74, 0.12);
+  --atlas-color-border: rgba(236, 230, 216, 0.1);
+  --atlas-color-border-strong: rgba(236, 230, 216, 0.18);
+  /* Data reliability levels shown next to every claim: documented, inferred, undetermined. */
+  --atlas-color-documented: #6fbf8e;
+  --atlas-color-inferred: #e0a458;
+  --atlas-color-undetermined: #8e97a6;
+  --atlas-radius-sm: 6px;
+  --atlas-radius-md: 12px;
+  --atlas-space-1: 0.25rem;
+  --atlas-space-2: 0.5rem;
+  --atlas-space-3: 0.75rem;
+  --atlas-space-4: 1rem;
+  --atlas-space-5: 1.5rem;
+  --atlas-space-6: 2rem;
+  --atlas-space-8: 3rem;
+  /*
+   * Literal fallback stacks so the design system renders sanely on its own.
+   * Consumers that self-host these faces (e.g. via next/font) re-declare the
+   * same custom properties on :root after importing styles.css.
+   */
+  --atlas-font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --atlas-font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --atlas-motion-fast: 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}

@@ -1,0 +1,19 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--atlas-space-3);
+  padding: var(--atlas-space-4);
+  border: 1px solid var(--atlas-color-border);
+  border-radius: var(--atlas-radius-md);
+  background: var(--atlas-color-bg-overlay);
+  backdrop-filter: blur(12px);
+  color: var(--atlas-color-fg);
+  font-family: var(--atlas-font-sans);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--atlas-space-3);
+}

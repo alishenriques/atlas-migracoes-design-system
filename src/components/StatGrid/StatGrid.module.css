@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--atlas-space-4);
+  margin: 0;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: var(--atlas-space-3);
+}
+
+.icon {
+  display: inline-flex;
+  color: var(--atlas-color-accent);
+}
+
+.text {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.value {
+  margin: 0;
+  font-family: var(--atlas-font-serif);
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+  color: var(--atlas-color-accent);
+}
+
+.label {
+  font-family: var(--atlas-font-sans);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--atlas-color-muted);
+}

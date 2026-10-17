@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--atlas-space-2);
+  border: 0;
+  border-radius: var(--atlas-radius-sm);
+  padding: var(--atlas-space-3) var(--atlas-space-4);
+  font-family: var(--atlas-font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color var(--atlas-motion-fast),
+    box-shadow var(--atlas-motion-fast),
+    color var(--atlas-motion-fast);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--atlas-color-accent);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.primary {
+  background: var(--atlas-color-accent);
+  color: var(--atlas-color-accent-ink);
+}
+
+.primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--atlas-color-accent) 88%, white);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--atlas-color-fg);
+  box-shadow: inset 0 0 0 1px var(--atlas-color-border-strong);
+}
+
+.ghost:hover:not(:disabled) {
+  color: var(--atlas-color-accent);
+  box-shadow: inset 0 0 0 1px var(--atlas-color-accent);
+}

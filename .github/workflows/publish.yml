@@ -1,0 +1,36 @@
+name: Publish to npm
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          # No registry-url here on purpose: setup-node always writes an
+          # authToken line to .npmrc from NODE_AUTH_TOKEN when it's set, even
+          # if that var is empty (we don't use an NPM_TOKEN secret). An empty
+          # authToken breaks npm's OIDC trusted-publishing auto-detection —
+          # this caused the v0.2.0 publish to 404. npm defaults to
+          # registry.npmjs.org on its own.
+      - run: corepack enable
+      - name: Upgrade npm (trusted publishing needs npm >= 11.5.1)
+        run: npm install -g npm@latest
+      - run: yarn install --immutable
+      - run: yarn lint
+      - run: yarn typecheck
+      - run: yarn test
+      - run: yarn build
+      - name: Ensure tag matches package version
+        run: test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
+      # Authenticates via OIDC (npm Trusted Publisher); no NPM_TOKEN secret needed.
+      - run: npm publish --provenance --access public
