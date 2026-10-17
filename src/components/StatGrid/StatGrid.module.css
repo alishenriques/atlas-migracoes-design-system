@@ -7,29 +7,28 @@
 
 .cell {
   display: flex;
-  align-items: center;
-  gap: var(--atlas-space-3);
+  flex-direction: column-reverse;
+  gap: var(--atlas-space-1);
 }
 
 .icon {
   display: inline-flex;
-  color: var(--atlas-color-accent);
-}
-
-.text {
-  display: flex;
-  flex-direction: column-reverse;
+  margin-right: var(--atlas-space-2);
+  vertical-align: middle;
 }
 
 .value {
   margin: 0;
   font-family: var(--atlas-font-serif);
-  font-size: 22px;
-  font-variant-numeric: tabular-nums;
+  font-size: 30px;
+  line-height: 1.1;
+  /* Serif faces like Cormorant default to old-style figures, which read as small. */
+  font-variant-numeric: lining-nums tabular-nums;
   color: var(--atlas-color-accent);
 }
 
 .label {
+  margin: 0;
   font-family: var(--atlas-font-sans);
   font-size: 11px;
   letter-spacing: 0.12em;
