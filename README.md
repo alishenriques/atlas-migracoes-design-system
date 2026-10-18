@@ -39,6 +39,7 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 | `--atlas-color-bg-raised` | `#0d1626` | superfícies elevadas |
 | `--atlas-color-accent` | `#d4a64a` | dourado: item ativo, cidades em destaque, ação principal |
 | `--atlas-color-documented` / `-inferred` / `-undetermined` | verde / âmbar / cinza | nível de confiabilidade da informação |
+| `--atlas-color-entity-*` | verde, verde-água, ouro, lilás, azul, rosa | tipo de entidade na Rede Relacional e nos mapas: `artist`, `work`, `exhibition`, `publication`, `institution`, `place` |
 | `--atlas-font-serif` | Cormorant Garamond | títulos e números |
 | `--atlas-font-sans` | Inter | interface e rótulos |
 
@@ -51,6 +52,8 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `StatGrid` — faixa de contadores do acervo (artistas, obras, exposições), com ícone opcional
 - `SelectField` — select nativo com rótulo, para filtros nos painéis (ex.: país de origem)
 - `YearRange` — período com duas alças num só trilho, como a linha do tempo 1918–1989 sob o mapa
+- `SegmentedControl` — uma escolha entre poucas opções curtas lado a lado, como a década do mapa histórico
+- `Legend` — pontos coloridos com o nome de cada tipo de entidade (artistas, obras, exposições, publicações, instituições, lugares), nas cores `--atlas-color-entity-*`
 
 ## Convenção: quando um componente entra aqui
 
