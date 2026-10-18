@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--atlas-space-2) var(--atlas-space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--atlas-font-sans);
+  font-size: 12px;
+  color: var(--atlas-color-fg);
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--atlas-space-2);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.count {
+  color: var(--atlas-color-muted);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.artist {
+  background: var(--atlas-color-entity-artist);
+}
+
+.work {
+  background: var(--atlas-color-entity-work);
+}
+
+.exhibition {
+  background: var(--atlas-color-entity-exhibition);
+}
+
+.publication {
+  background: var(--atlas-color-entity-publication);
+}
+
+.institution {
+  background: var(--atlas-color-entity-institution);
+}
+
+.place {
+  background: var(--atlas-color-entity-place);
+}
