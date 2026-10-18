@@ -27,7 +27,7 @@ yarn install
 yarn dev          # build em watch
 ```
 
-`yarn lint` · `yarn typecheck` · `yarn test` · `yarn build`
+`yarn lint` · `yarn typecheck` · `yarn test` · `yarn test:coverage` · `yarn build`
 
 ## Identidade visual
 

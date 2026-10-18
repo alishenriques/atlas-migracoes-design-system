@@ -2,7 +2,7 @@
 
 Before changing anything, read the ecosystem docs in the main repo: `../atlas-migracoes/docs/ai/README.md` (architecture, conventions, non-negotiables).
 
-Quick rules: each component gets `Name.tsx` + `Name.module.css` + `Name.test.tsx` + `index.ts` and is exported from `src/index.ts`; use `--atlas-*` tokens only; bump the version on public API changes. Verify with `yarn lint && yarn typecheck && yarn test && yarn build`.
+Quick rules: each component gets `Name.tsx` + `Name.module.css` + `Name.test.tsx` + `index.ts` and is exported from `src/index.ts`; use `--atlas-*` tokens only; bump the version on public API changes. Test coverage is an architecture premise: CI runs `yarn test:coverage` and fails below the floors in `vite.config.ts` (100% lines, statements and functions, 95% branches); never lower them. Verify with `yarn lint && yarn typecheck && yarn test:coverage && yarn build`.
 
 ## Scope and PR workflow (decided by Alisson, 2026-10-17)
 
