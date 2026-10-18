@@ -38,5 +38,20 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
+    coverage: {
+      provider: "v8",
+      include: ["src/**/*.{ts,tsx}"],
+      // Barrels only re-export; the test setup is not library code
+      // (see the ecosystem's architecture.md, "Test coverage").
+      exclude: ["src/**/index.ts", "src/**/*.d.ts", "src/test/**", "src/**/*.test.{ts,tsx}"],
+      reporter: ["text", "text-summary", "json-summary", "html"],
+      // A floor, not a target: raise it whenever coverage goes up, never lower it.
+      thresholds: {
+        statements: 100,
+        branches: 95,
+        functions: 100,
+        lines: 100,
+      },
+    },
   },
 });
