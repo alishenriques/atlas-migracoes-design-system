@@ -47,4 +47,12 @@ describe("YearRange", () => {
     setup({ value: [1900, 2000] });
     expect(screen.getByText("1918–1989")).toBeInTheDocument();
   });
+
+  it("draws a valid fill when the range has a single year", () => {
+    setup({ min: 1950, max: 1950, value: [1950, 1950] });
+    expect(screen.getByText("1950–1950")).toBeInTheDocument();
+    const fill = document.querySelector<HTMLElement>("[aria-hidden='true'][style]");
+    expect(fill?.style.left).toBe("0%");
+    expect(fill?.style.right).toBe("0%");
+  });
 });
