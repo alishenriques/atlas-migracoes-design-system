@@ -15,6 +15,13 @@
   --atlas-color-documented: #6fbf8e;
   --atlas-color-inferred: #e0a458;
   --atlas-color-undetermined: #8e97a6;
+  /* Kinds of entity in the Rede Relacional and on the maps (slide 21 of the deck). */
+  --atlas-color-entity-artist: #7fb48a;
+  --atlas-color-entity-work: #5fb3a8;
+  --atlas-color-entity-exhibition: #e0b25c;
+  --atlas-color-entity-publication: #a283c2;
+  --atlas-color-entity-institution: #6f8fc9;
+  --atlas-color-entity-place: #c9727a;
   --atlas-radius-sm: 6px;
   --atlas-radius-md: 12px;
   --atlas-space-1: 0.25rem;
