@@ -23,8 +23,10 @@ jobs:
           # this caused the v0.2.0 publish to 404. npm defaults to
           # registry.npmjs.org on its own.
       - run: corepack enable
+      # Pinned: this job holds the OIDC token that publishes to npm, so it never
+      # installs whatever npm happens to be "latest" at release time.
       - name: Upgrade npm (trusted publishing needs npm >= 11.5.1)
-        run: npm install -g npm@latest
+        run: npm install -g npm@11.21.0
       - run: yarn install --immutable
       - run: yarn lint
       - run: yarn typecheck
