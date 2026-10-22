@@ -49,7 +49,8 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `Eyebrow` — rótulo pequeno em caixa alta (`accent` dourado ou `muted`)
 - `Panel` — superfície translúcida sobre o mapa, com título e ação opcionais no cabeçalho (filtros, camadas, destaques)
 - `ReliabilityTag` — ponto colorido + rótulo indicando se a informação é documentada, inferida ou indeterminada
-- `StatGrid` — faixa de contadores do acervo (artistas, obras, exposições), com ícone opcional
+- `StatGrid` — faixa de contadores do acervo (artistas, obras, exposições), com ícone opcional à esquerda do número e do rótulo
+- `CollectionIcon` — ícones decorativos do acervo (`artists`, `works`, `exhibitions`, `publications`, `countries`), em traço fino marfim com um ponto dourado, como a logo
 - `SelectField` — select nativo com rótulo, para filtros nos painéis (ex.: país de origem)
 - `YearRange` — período com duas alças num só trilho, como a linha do tempo 1918–1989 sob o mapa
 - `SegmentedControl` — uma escolha entre poucas opções curtas lado a lado, como a década do mapa histórico
