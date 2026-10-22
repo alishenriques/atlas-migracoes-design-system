@@ -12,6 +12,9 @@ export type { PanelProps } from "./components/Panel";
 export { ReliabilityTag } from "./components/ReliabilityTag";
 export type { ReliabilityLevel, ReliabilityTagProps } from "./components/ReliabilityTag";
 
+export { CollectionIcon } from "./components/CollectionIcon";
+export type { CollectionIconName, CollectionIconProps } from "./components/CollectionIcon";
+
 export { StatGrid } from "./components/StatGrid";
 export type { Stat, StatGridProps } from "./components/StatGrid";
 
