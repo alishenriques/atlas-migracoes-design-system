@@ -1,4 +1,5 @@
 .grid {
+  --atlas-stat-icon-size: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: var(--atlas-space-4);
@@ -11,10 +12,31 @@
   gap: var(--atlas-space-1);
 }
 
+/*
+ * With an icon, the cell keeps room on its left and the icon (which stays
+ * inside the dd, so the list keeps its dt/dd pairs) is centred on the number
+ * and label together.
+ */
+.withIcon {
+  position: relative;
+  padding-left: calc(var(--atlas-stat-icon-size) + var(--atlas-space-3));
+}
+
 .icon {
-  display: inline-flex;
-  margin-right: var(--atlas-space-2);
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--atlas-stat-icon-size);
+  height: var(--atlas-stat-icon-size);
+  transform: translateY(-50%);
+}
+
+.icon > svg {
+  width: 100%;
+  height: 100%;
 }
 
 .value {
