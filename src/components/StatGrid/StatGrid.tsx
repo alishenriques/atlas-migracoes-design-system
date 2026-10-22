@@ -6,7 +6,10 @@ export type Stat = {
   value: string;
   /** e.g. "artistas" */
   label: string;
-  /** Optional decorative icon shown before the number. */
+  /**
+   * Optional decorative icon, shown to the left of the number and its label,
+   * centred on both (e.g. a `CollectionIcon`; it is sized to 40px).
+   */
   icon?: ReactNode;
 };
 
@@ -23,7 +26,7 @@ export function StatGrid({ stats, className, ...props }: StatGridProps) {
       {stats.map((stat) => (
         // dt before dd and nothing else in the wrapper div, as a description
         // list requires; CSS shows the number on top of its label.
-        <div key={stat.label} className={styles.cell}>
+        <div key={stat.label} className={stat.icon ? `${styles.cell} ${styles.withIcon}` : styles.cell}>
           <dt className={styles.label}>{stat.label}</dt>
           <dd className={styles.value}>
             {stat.icon && (
