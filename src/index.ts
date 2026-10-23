@@ -15,6 +15,9 @@ export type { ReliabilityLevel, ReliabilityTagProps } from "./components/Reliabi
 export { CollectionIcon } from "./components/CollectionIcon";
 export type { CollectionIconName, CollectionIconProps } from "./components/CollectionIcon";
 
+export { EventIcon } from "./components/EventIcon";
+export type { EventIconName, EventIconProps } from "./components/EventIcon";
+
 export { Avatar } from "./components/Avatar";
 export type { AvatarProps } from "./components/Avatar";
 
