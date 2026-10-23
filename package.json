@@ -1,6 +1,6 @@
 {
   "name": "@alishenriques/atlas-design-system",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Design system of Atlas Migrações Leste-Sul (MAC USP): tokens and React components",
   "type": "module",
   "main": "./dist/index.js",
