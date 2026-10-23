@@ -51,6 +51,7 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `ReliabilityTag` — ponto colorido + rótulo indicando se a informação é documentada, inferida ou indeterminada
 - `StatGrid` — faixa de contadores do acervo (artistas, obras, exposições), com ícone opcional à esquerda do número e do rótulo
 - `CollectionIcon` — ícones decorativos do acervo (`artists`, `works`, `exhibitions`, `publications`, `countries`), em traço fino marfim com um ponto dourado, como a logo
+- `EventIcon` — ícones decorativos de eventos da vida (`birth`, `death`): sol nascendo e se pondo no horizonte, no mesmo traço marfim com ponto dourado
 - `Avatar` — retrato redondo de uma pessoa; sem `src`, mostra o desenho "ainda sem foto" (cabeça e ombros em traço marfim, ponto dourado, borda tracejada)
 - `SelectField` — select com rótulo, para filtros nos painéis (ex.: país de origem). Opções simples usam o select nativo; se alguma opção tiver `icon` (ex.: bandeira), vira uma lista própria acessível (combobox + listbox, teclado completo), porque o select nativo não mostra imagens
 - `YearRange` — período com duas alças num só trilho, como a linha do tempo 1918–1989 sob o mapa
