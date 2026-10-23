@@ -15,6 +15,9 @@ export type { ReliabilityLevel, ReliabilityTagProps } from "./components/Reliabi
 export { CollectionIcon } from "./components/CollectionIcon";
 export type { CollectionIconName, CollectionIconProps } from "./components/CollectionIcon";
 
+export { Avatar } from "./components/Avatar";
+export type { AvatarProps } from "./components/Avatar";
+
 export { StatGrid } from "./components/StatGrid";
 export type { Stat, StatGridProps } from "./components/StatGrid";
 
