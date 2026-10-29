@@ -38,3 +38,6 @@ export type { EntityTone, LegendItem, LegendProps } from "./components/Legend";
 
 export { Skeleton } from "./components/Skeleton";
 export type { SkeletonProps, SkeletonShape } from "./components/Skeleton";
+
+export { SearchField } from "./components/SearchField";
+export type { SearchFieldProps } from "./components/SearchField";
