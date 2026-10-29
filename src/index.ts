@@ -50,3 +50,9 @@ export type { ToggletipProps } from "./components/Toggletip";
 
 export { Portrait } from "./components/Portrait";
 export type { PortraitProps } from "./components/Portrait";
+
+export { Tabs } from "./components/Tabs";
+export type { Tab, TabsProps } from "./components/Tabs";
+
+export { FactIcon } from "./components/FactIcon";
+export type { FactIconName, FactIconProps } from "./components/FactIcon";
