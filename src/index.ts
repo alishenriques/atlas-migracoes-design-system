@@ -41,3 +41,12 @@ export type { SkeletonProps, SkeletonShape } from "./components/Skeleton";
 
 export { SearchField } from "./components/SearchField";
 export type { SearchFieldProps } from "./components/SearchField";
+
+export { Accordion } from "./components/Accordion";
+export type { AccordionProps } from "./components/Accordion";
+
+export { Toggletip } from "./components/Toggletip";
+export type { ToggletipProps } from "./components/Toggletip";
+
+export { Portrait } from "./components/Portrait";
+export type { PortraitProps } from "./components/Portrait";
