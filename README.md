@@ -63,6 +63,8 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `Toggletip` — explicação curta que abre ao clicar no `trigger` (ex.: um `ReliabilityTag`) e fecha com outro clique, Escape ou clique fora; funciona por toque e teclado, ao contrário de um tooltip de hover
 - `Portrait` — foto de uma pessoa num quadro 4:5 que ocupa a largura do contêiner, com o desenho "ainda sem foto" enquanto não há imagem e uma legenda opcional (ex.: crédito)
 - `Button` com `asChild` — aplica o estilo do botão ao único filho (ex.: o link do roteador do app), para um link parecer botão
+- `Tabs` — abas com rótulo pequeno em caixa alta e sublinhado dourado na aberta; setas, Home e End trocam de aba (padrão ARIA de abas)
+- `FactIcon` — ícones da família "Traço" para os dados de uma ficha: `nationality`, `occupation`, `period`, `institution`, `movement`, `education`, `group`
 
 ## Convenção: quando um componente entra aqui
 
