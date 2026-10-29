@@ -58,6 +58,7 @@ Referência: as telas do Atlas na apresentação do projeto (`ap_MIGRACOES.pptx`
 - `SegmentedControl` — uma escolha entre poucas opções curtas lado a lado, como a década do mapa histórico
 - `Legend` — pontos coloridos com o nome de cada tipo de entidade (artistas, obras, exposições, publicações, instituições, lugares), nas cores `--atlas-color-entity-*`
 - `Skeleton` — forma do conteúdo que ainda está carregando (`block` para painéis e mapas, `text` com `lines` para parágrafos, `circle` para retratos), com um brilho dourado lento que passa por cima; é decorativo (`aria-hidden`), então quem usa anuncia o carregamento uma vez (ex.: região `role="status"`). Sem animação quando o sistema pede menos movimento
+- `SearchField` — campo de busca com rótulo, para filtrar uma lista enquanto se digita (ex.: buscar artista em Trajetórias). Lupa na família "Traço"; um botão (`clearLabel`) e a tecla Escape limpam o campo
 
 ## Convenção: quando um componente entra aqui
 
