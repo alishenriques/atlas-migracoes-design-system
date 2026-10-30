@@ -1,4 +1,7 @@
 .accordion {
+  /* Holds the absolutely positioned screen-reader text, so inside a scrolling
+     container it scrolls with the accordion instead of stretching the page. */
+  position: relative;
   border: 1px solid var(--atlas-color-border);
   border-radius: var(--atlas-radius-md);
   background: var(--atlas-color-bg-raised);
