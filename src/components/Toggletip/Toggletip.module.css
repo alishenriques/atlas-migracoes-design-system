@@ -23,26 +23,31 @@
 }
 
 .mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  flex: none;
   width: 14px;
   height: 14px;
-  border: 1px solid var(--atlas-color-border-strong);
-  border-radius: 50%;
   color: var(--atlas-color-muted);
-  font-family: var(--atlas-font-serif);
-  font-size: 11px;
-  font-style: italic;
-  line-height: 1;
-  transition:
-    color var(--atlas-motion-fast),
-    border-color var(--atlas-motion-fast);
+  overflow: visible;
+  transition: color var(--atlas-motion-fast);
+}
+
+.line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+.tittle {
+  fill: currentColor;
+}
+
+.arrival {
+  fill: var(--atlas-color-accent);
 }
 
 .trigger:hover .mark,
 .trigger[aria-expanded="true"] .mark {
-  border-color: var(--atlas-color-accent);
   color: var(--atlas-color-accent);
 }
 

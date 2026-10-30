@@ -45,14 +45,27 @@ export function Toggletip({ trigger, children, align = "start", className, ...pr
         onClick={() => setOpen((value) => !value)}
       >
         {trigger}
-        <span className={styles.mark} aria-hidden="true">
-          i
-        </span>
+        <InfoMark />
       </button>
       {/* Always in the DOM as a live region, so its text is announced when it fills. */}
       <span id={id} role="status" className={styles.bubble} data-align={align} hidden={!open}>
         {open ? children : null}
       </span>
     </span>
+  );
+}
+
+/**
+ * The "Traço" info mark: an open arc that ends in a gold dot (an arrival, as on
+ * the map's trajectories) around the stem of an "i".
+ */
+function InfoMark() {
+  return (
+    <svg className={styles.mark} viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path className={styles.line} d="M 12.2 3.4 A 6.4 6.4 0 1 0 14.4 7.4" />
+      <line className={styles.line} x1="8" y1="7" x2="8" y2="11.4" />
+      <circle className={styles.tittle} cx="8" cy="4.9" r="0.85" />
+      <circle className={styles.arrival} cx="13.6" cy="5" r="1.15" />
+    </svg>
   );
 }
