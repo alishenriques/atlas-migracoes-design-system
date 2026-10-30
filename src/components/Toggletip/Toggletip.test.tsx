@@ -46,4 +46,11 @@ describe("Toggletip", () => {
     expect(trigger).toHaveAttribute("aria-expanded", "false");
     expect(trigger.parentElement).toHaveClass("extra");
   });
+
+  it("draws a decorative info mark that stays out of the button's name", () => {
+    const trigger = setup();
+    const mark = trigger.querySelector("svg");
+    expect(mark).toHaveAttribute("aria-hidden", "true");
+    expect(trigger).toHaveAccessibleName("Documentado");
+  });
 });
