@@ -80,6 +80,13 @@
   display: none;
 }
 
+/* In the top layer: placed against the window by placeBubble, clear of any block that clips. */
+.bubble:popover-open {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
