@@ -16,7 +16,8 @@ describe("Skeleton", () => {
     const { container } = render(<Skeleton width={320} height="12rem" />);
     const skeleton = container.firstElementChild;
     expect(skeleton).toHaveStyle({ width: "320px" });
-    expect(bones(skeleton)[0]).toHaveStyle({ height: "12rem" });
+    // The inline value, as written: jsdom 30 resolves rem to px in computed styles.
+    expect(bones(skeleton)[0].style.height).toBe("12rem");
   });
 
   it("draws text lines with a shorter last one", () => {
